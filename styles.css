@@ -1,0 +1,122 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Default flex direction */
+    height: 100vh;
+}
+
+button {
+    border: none;
+    border: 1px solid #fff;
+    background: #333;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background: #000;
+}
+
+.header div {
+    display: flex;
+}
+
+.header div button {
+    margin: 0 auto;
+}
+
+.f-header {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-header button {
+    width: 33%;
+}
+
+.s-header {
+    width: 25%;
+}
+
+.s-header button {
+    width: 50%;
+}
+
+.header button.active {
+    background: #000;
+}
+
+/* Editor and output styling */
+.editor,
+#outputContainer {
+    flex-grow: 1;
+    overflow: hidden;
+    display: none;
+}
+
+#outputContainer {
+    display: none;
+    flex-direction: column;
+}
+
+#outputContainer button {
+    width: 60px;
+    height: 30px;
+}
+
+#output {
+    flex-grow: 1;
+    border-top: 2px solid #ddd;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 16px;
+    border: none;
+    transition: transform 0.3s ease;
+    color: #fff;
+    background: #000;
+}
+
+.visible {
+    display: flex;
+}
+
+/* Media Query for wider screens */
+@media (min-aspect-ratio: 1/1) {
+    body {
+        flex-direction: row;
+    }
+    .header {
+        flex-direction: column;
+        width: 10%;
+        height: 100%;
+        border-right: 1px solid #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .f-header button {
+        width: 100%;
+    }
+    .header div {
+        flex-direction: column;
+    }
+    .header div button {
+        width: 100%;
+        margin: 0;
+    }
+}
