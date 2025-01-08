@@ -43,8 +43,8 @@ function runCode() {
     const js = `<script>${document.getElementById('js').value}<\/script>`;
     outputFrame.srcdoc = html + css + js;
 
-    document.querySelector('.header').style.display = 'none';
-    document.querySelector('.header div').style.display = 'none';
+    document.querySelector('.codeBtn').style.display = 'none';
+    document.querySelector('.codeBtn div').style.display = 'none';
     htmlEditor.style.display = 'none';
     cssEditor.style.display = 'none';
     jsEditor.style.display = 'none';
@@ -53,8 +53,8 @@ function runCode() {
 
 // Go back to the editor
 function goBack() {
-    document.querySelector('.header').style.display = 'flex';
-    document.querySelector('.header div').style.display = 'flex';
+    document.querySelector('.codeBtn').style.display = 'flex';
+    document.querySelector('.codeBtn div').style.display = 'flex';
     outputContainer.style.display = 'none';
     showEditor('html');
 }
