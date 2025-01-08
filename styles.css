@@ -3,9 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #000;
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Default flex direction */
+    flex-direction: column-reverse; /* Default flex direction */
     height: 100vh;
 }
 
