@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: #000;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     flex-direction: column; /* Default flex direction */
     height: 100vh;
@@ -17,7 +17,7 @@ button {
     color: #fff;
 }
 
-.codeBtn {
+.header {
     width: 100%;
     height: 25px;
     display: flex;
@@ -26,11 +26,11 @@ button {
     background: #000;
 }
 
-.codeBtn div {
+.header div {
     display: flex;
 }
 
-.codeBtn div button {
+.header div button {
     margin: 0 auto;
 }
 
@@ -52,7 +52,7 @@ button {
     width: 50%;
 }
 
-.codeBtn button.active {
+.header button.active {
     background: #000;
 }
 
@@ -102,7 +102,7 @@ textarea {
     body {
         flex-direction: row;
     }
-    .codeBtn {
+    .header {
         flex-direction: column;
         width: 10%;
         height: 100%;
@@ -113,10 +113,10 @@ textarea {
     .f-header button {
         width: 100%;
     }
-    .codeBtn div {
+    .header div {
         flex-direction: column;
     }
-    .codeBtn div button {
+    .header div button {
         width: 100%;
         margin: 0;
     }
